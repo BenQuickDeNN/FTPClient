@@ -6,3 +6,4 @@ E:\projects\VS2015\FTPClient\FTPClient\obj\Debug\FTPClient.Properties.Resources.
 E:\projects\VS2015\FTPClient\FTPClient\obj\Debug\FTPClient.csproj.GenerateResource.Cache
 E:\projects\VS2015\FTPClient\FTPClient\obj\Debug\FTPClient.exe
 E:\projects\VS2015\FTPClient\FTPClient\obj\Debug\FTPClient.pdb
+E:\projects\VS2015\FTPClient\FTPClient\obj\Debug\FTPClient.DiaglogWindow.DownloadFile.resources

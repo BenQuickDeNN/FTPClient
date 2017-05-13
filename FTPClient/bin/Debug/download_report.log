@@ -1,0 +1,169 @@
+2017/5/13 16:12:37
+System.Exception: 127.0.0.1 51964 ./download/
+2017/5/13 16:12:37
+System.ArgumentNullException: 路径不能为空。
+参数名: path
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   在 System.IO.File.Create(String path, Int32 bufferSize)
+   在 FTPDownload.Program.receiveCallBack(IAsyncResult iar)
+2017/5/13 16:12:37
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   在 FTPDownload.Program.dataDisconnect()
+   在 FTPDownload.Program.Main(String[] args)
+2017/5/13 16:15:00
+System.Exception: 127.0.0.1 55668 ./download/
+2017/5/13 16:17:34
+System.Exception: 127.0.0.1 56668 E:\projects\VS2015\FTPClient\FTPClient\bin\Debug\download\
+2017/5/13 16:18:24
+System.Exception: 127.0.0.1 53176 E:\projects\VS2015\FTPClient\FTPClient\bin\Debug\download\XJTU.jpg
+2017/5/13 16:18:24
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   在 FTPDownload.Program.dataDisconnect()
+   在 FTPDownload.Program.Main(String[] args)
+2017/5/13 16:19:46
+System.Exception: 127.0.0.1 54511 E:\projects\VS2015\FTPClient\FTPClient\bin\Debug\download\XJTU.jpg
+2017/5/13 16:20:20
+System.Exception: 127.0.0.1 61694 E:\projects\VS2015\FTPClient\FTPClient\bin\Debug\download\test.txt
+2017/5/13 16:22:44
+System.Exception: 127.0.0.1 63781 E:\projects\VS2015\FTPClient\FTPClient\bin\Debug\download\test.txt
+2017/5/13 16:22:44
+System.IO.IOException: 文件“E:\projects\VS2015\FTPClient\FTPClient\bin\Debug\download\test.txt”正由另一进程使用，因此该进程无法访问该文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   在 System.IO.File.WriteAllBytes(String path, Byte[] bytes)
+   在 FTPDownload.Program.receiveCallBack(IAsyncResult iar)
+2017/5/13 16:22:44
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   在 FTPDownload.Program.dataDisconnect()
+   在 FTPDownload.Program.Main(String[] args)
+2017/5/13 16:24:05
+System.Exception: 127.0.0.1 50442 E:\projects\VS2015\FTPClient\FTPClient\bin\Debug\download\test.txt
+2017/5/13 16:24:06
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   在 FTPDownload.Program.dataDisconnect()
+   在 FTPDownload.Program.Main(String[] args)
+2017/5/13 16:24:36
+System.Exception: 127.0.0.1 57268 E:\projects\VS2015\FTPClient\FTPClient\bin\Debug\download\XJTU.jpg
+2017/5/13 16:24:36
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   在 FTPDownload.Program.dataDisconnect()
+   在 FTPDownload.Program.Main(String[] args)
+2017/5/13 16:28:37
+System.Exception: 127.0.0.1 62575 E:\projects\VS2015\FTPClient\FTPClient\bin\Debug\download\XJTU.jpg
+2017/5/13 16:28:37
+System.ArgumentNullException: 路径不能为空。
+参数名: path
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   在 System.IO.File.WriteAllBytes(String path, Byte[] bytes)
+   在 FTPDownload.Program.receiveCallBack(IAsyncResult iar)
+2017/5/13 16:28:38
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   在 FTPDownload.Program.dataDisconnect()
+   在 FTPDownload.Program.Main(String[] args)
+2017/5/13 16:29:44
+System.Exception: 127.0.0.1 55694 E:\projects\VS2015\FTPClient\FTPClient\bin\Debug\download\XJTU.jpg
+2017/5/13 16:29:45
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   在 FTPDownload.Program.dataDisconnect()
+   在 FTPDownload.Program.Main(String[] args)
+2017/5/13 16:37:08
+System.Exception: 127.0.0.1 54392 E:\projects\VS2015\FTPClient\FTPClient\bin\Debug\download\XJTU.jpg
+2017/5/13 16:37:10
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   在 FTPDownload.Program.dataDisconnect()
+   在 FTPDownload.Program.Main(String[] args)
+2017/5/13 16:37:34
+System.Exception: 127.0.0.1 57239 E:\projects\VS2015\FTPClient\FTPClient\bin\Debug\download\taylor.jpg
+2017/5/13 16:37:35
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   在 FTPDownload.Program.dataDisconnect()
+   在 FTPDownload.Program.Main(String[] args)
+2017/5/13 16:37:49
+System.Exception: 127.0.0.1 65237 E:\projects\VS2015\FTPClient\FTPClient\bin\Debug\download\test.txt
+2017/5/13 16:37:50
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   在 FTPDownload.Program.dataDisconnect()
+   在 FTPDownload.Program.Main(String[] args)
+2017/5/13 16:45:34
+System.Exception: 127.0.0.1 51679 E:\projects\VS2015\FTPClient\FTPClient\bin\Debug\download\XJTU.jpg 0
+2017/5/13 16:45:35
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   在 FTPDownload.Program.dataDisconnect()
+   在 FTPDownload.Program.Main(String[] args)
+2017/5/13 16:47:36
+System.Exception: 127.0.0.1 51126 E:\projects\VS2015\FTPClient\FTPClient\bin\Debug\download\XJTU.jpg 0
+2017/5/13 16:47:37
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   在 FTPDownload.Program.dataDisconnect()
+   在 FTPDownload.Program.Main(String[] args)
+2017/5/13 16:55:54
+System.Exception: 127.0.0.1 55139 E:\projects\VS2015\FTPClient\FTPClient\bin\Debug\download\XJTU.jpg 0
+2017/5/13 16:55:55
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   在 FTPDownload.Program.dataDisconnect()
+   在 FTPDownload.Program.Main(String[] args)
+2017/5/13 16:57:32
+System.Exception: 127.0.0.1 65487 E:\projects\VS2015\FTPClient\FTPClient\bin\Debug\download\XJTU.jpg 0
+2017/5/13 16:57:34
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   在 FTPDownload.Program.dataDisconnect()
+   在 FTPDownload.Program.Main(String[] args)
+2017/5/13 16:58:48
+System.Exception: 127.0.0.1 60215 E:\projects\VS2015\FTPClient\FTPClient\bin\Debug\download\XJTU.jpg 41855
+2017/5/13 16:58:49
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   在 FTPDownload.Program.dataDisconnect()
+   在 FTPDownload.Program.Main(String[] args)
+2017/5/13 16:59:37
+System.Exception: 127.0.0.1 58452 E:\projects\VS2015\FTPClient\FTPClient\bin\Debug\download\taylor.jpg 11723
+2017/5/13 16:59:38
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   在 FTPDownload.Program.dataDisconnect()
+   在 FTPDownload.Program.Main(String[] args)
+2017/5/13 17:00:00
+System.Exception: 127.0.0.1 60687 E:\projects\VS2015\FTPClient\FTPClient\bin\Debug\download\test.txt 7276
+2017/5/13 17:00:01
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   在 FTPDownload.Program.dataDisconnect()
+   在 FTPDownload.Program.Main(String[] args)
+2017/5/13 17:00:34
+System.Exception: 127.0.0.1 50905 E:\projects\VS2015\FTPClient\FTPClient\bin\Debug\download\abc.jpg 78580
+2017/5/13 17:00:34
+System.ArgumentException: 偏移量和长度超出数组的界限，或者计数大于从索引到源集合结尾处的元素数量。
+   在 System.IO.FileStream.Write(Byte[] array, Int32 offset, Int32 count)
+   在 FTPDownload.Program.receiveCallBack(IAsyncResult iar)
+2017/5/13 17:00:35
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   在 FTPDownload.Program.dataDisconnect()
+   在 FTPDownload.Program.Main(String[] args)
+2017/5/13 17:04:49
+System.Exception: 127.0.0.1 53844 E:\projects\VS2015\FTPClient\FTPClient\bin\Debug\download\ASM2BIN.exe 16896
+2017/5/13 17:04:50
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   在 FTPDownload.Program.dataDisconnect()
+   在 FTPDownload.Program.Main(String[] args)

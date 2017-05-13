@@ -19,6 +19,8 @@ namespace FTPClient.FTPProtocol
         Socket ctrlSocket;
         string ServerIP;
         string FileName;
+        int FileSize;
+        bool IsUpload = false;
         byte[] receiveByte = new byte[64 * 1024];
         AsyncCallback asyncCallback;
         /// <summary>
@@ -59,12 +61,13 @@ namespace FTPClient.FTPProtocol
         /// 发送消息
         /// </summary>
         /// <param name="msg"></param>
-        public void sendCtrlMessage(string msg, string fileName)
+        public void sendCtrlMessage(string msg, string fileName, bool isUpload)
         {
             if (ctrlSocket == null) return;
             if (!ctrlSocket.Connected) return;
             byte[] msgByte = Encoding.ASCII.GetBytes(msg);
             FileName = fileName;
+            IsUpload = isUpload;
             ctrlSocket.Send(msgByte);
         }
         /// <summary>
@@ -76,7 +79,8 @@ namespace FTPClient.FTPProtocol
             try
             {
                 int REnd = ctrlSocket.EndReceive(iar);
-                string receive_content = Encoding.UTF8.GetString(receiveByte, 0, REnd);
+                string receive_content = Encoding.ASCII.GetString(receiveByte, 0, REnd);
+                Reporter.BugReport.reportFTPLog(receive_content);
                 richTextBoxConsole.Invoke(new MethodInvoker(delegate
                 {
                     richTextBoxConsole.AppendText(DateTime.Now.ToString() + "\n" + receive_content + "\n");
@@ -98,8 +102,17 @@ namespace FTPClient.FTPProtocol
                     {
                         richTextBoxConsole.AppendText(DateTime.Now.ToString() + "\n" + "get data port : " + dataPort.ToString() + "\n");
                     }));
-                    /* 启动数据传输进程 */
-                    CMDMethod.CMDComand.executeDataTransferProcess(ServerIP, dataPort, FileName);
+                    lock (ServerIP)
+                    {
+                        /* 启动数据传输进程 */
+                        if (IsUpload) CMDMethod.CMDComand.executeDataTransferProcess(ServerIP, dataPort, FileName);
+                        else CMDMethod.CMDComand.executeDataDownloadProcess(ServerIP, dataPort, FileName, FileSize);
+                    }
+                }
+                /* 获取文件尺寸 */
+                else if(receive_content.Contains("213 "))
+                {
+                    FileSize = int.Parse(CodeAnalysis.getValueString(receive_content)[0]);
                 }
                 ctrlSocket.BeginReceive(receiveByte, 0, receiveByte.Length, 0, asyncCallback, null);
             }

@@ -60,5 +60,21 @@ namespace CMDMethod
             proc.StartInfo.CreateNoWindow = false;
             proc.Start();
         }
+        /// <summary>
+        /// 执行下载进程
+        /// </summary>
+        public static void executeDataDownloadProcess(string ip, int port, string fileName, int Filesize)
+        {
+            string proPath = Path.GetFullPath(@"./FTPDownload.exe");
+            Process proc = new Process();
+            proc.StartInfo.FileName = proPath;
+            proc.StartInfo.Arguments = ip + " " + port.ToString() + " " + Path.GetFullPath(@"./download/" + fileName) + " " + Filesize.ToString();
+            proc.StartInfo.RedirectStandardInput = true;//重定向输入
+            proc.StartInfo.RedirectStandardError = true;
+            proc.StartInfo.RedirectStandardOutput = true;
+            proc.StartInfo.UseShellExecute = false;
+            proc.StartInfo.CreateNoWindow = false;
+            proc.Start();
+        }
     }
 }

@@ -43,8 +43,6 @@
             this.button_Upload = new System.Windows.Forms.Button();
             this.richTextBox_Console = new System.Windows.Forms.RichTextBox();
             this.button_Download = new System.Windows.Forms.Button();
-            this.progressBar_UploadFile = new System.Windows.Forms.ProgressBar();
-            this.progressBar_download = new System.Windows.Forms.ProgressBar();
             this.openFileDialog_upload = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_CtrlPort)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_DataPort)).BeginInit();
@@ -182,27 +180,11 @@
             this.button_Download.UseVisualStyleBackColor = true;
             this.button_Download.Click += new System.EventHandler(this.widgetClickEvent);
             // 
-            // progressBar_UploadFile
-            // 
-            this.progressBar_UploadFile.Location = new System.Drawing.Point(96, 488);
-            this.progressBar_UploadFile.Name = "progressBar_UploadFile";
-            this.progressBar_UploadFile.Size = new System.Drawing.Size(676, 23);
-            this.progressBar_UploadFile.TabIndex = 15;
-            // 
-            // progressBar_download
-            // 
-            this.progressBar_download.Location = new System.Drawing.Point(96, 526);
-            this.progressBar_download.Name = "progressBar_download";
-            this.progressBar_download.Size = new System.Drawing.Size(676, 23);
-            this.progressBar_download.TabIndex = 16;
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 561);
-            this.Controls.Add(this.progressBar_download);
-            this.Controls.Add(this.progressBar_UploadFile);
             this.Controls.Add(this.button_Download);
             this.Controls.Add(this.richTextBox_Console);
             this.Controls.Add(this.button_Upload);
@@ -218,7 +200,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox_FtpServer);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FTPClient";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_CtrlPort)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_DataPort)).EndInit();
@@ -244,8 +228,6 @@
         private System.Windows.Forms.Button button_Upload;
         private System.Windows.Forms.RichTextBox richTextBox_Console;
         private System.Windows.Forms.Button button_Download;
-        private System.Windows.Forms.ProgressBar progressBar_UploadFile;
-        private System.Windows.Forms.ProgressBar progressBar_download;
         private System.Windows.Forms.OpenFileDialog openFileDialog_upload;
     }
 }

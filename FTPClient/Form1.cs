@@ -1,4 +1,5 @@
 ﻿using FTPClient.ConfigScript;
+using FTPClient.DiaglogWindow;
 using FTPClient.FTPProtocol;
 using FTPClient.Reporter;
 using System;
@@ -59,6 +60,7 @@ namespace FTPClient
             if (sender.Equals(button_connect)) event_Connect();
             if (sender.Equals(button_disconnect)) event_Disconnect();
             if (sender.Equals(button_Upload)) event_Upload();
+            if (sender.Equals(button_Download)) event_Download();
         }
         /// <summary>
         /// 连接事件
@@ -107,6 +109,19 @@ namespace FTPClient
             {
                 string filePath = openFileDialog_upload.FileName;
                 ftpHelper.ctrlUpload(filePath);
+            }
+        }
+        /// <summary>
+        /// 下载文件
+        /// </summary>
+        void event_Download()
+        {
+            if (ftpHelper == null) return;
+            DownloadFile downloadFile = new DownloadFile();
+            if (downloadFile.ShowDialog() == DialogResult.OK)
+            {
+                string downloadFileName = downloadFile.DownLoadFileName;
+                ftpHelper.ctrlDownload(downloadFileName);
             }
         }
     }

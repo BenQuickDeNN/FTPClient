@@ -47,3 +47,35 @@ System.Net.Sockets.SocketException: ÓÉÓÚÌ×½Ó×ÖÃ»ÓĞÁ¬½Ó²¢ÇÒ(µ±Ê¹ÓÃÒ»¸ö sendto µ÷Ó
    ÔÚ System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
    ÔÚ FTPDataTransfer.Program.dataDisconnect()
    ÔÚ FTPDataTransfer.Program.Main(String[] args)
+2017/5/13 15:54:07
+System.IndexOutOfRangeException: Ë÷Òı³¬³öÁËÊı×é½çÏŞ¡£
+   ÔÚ FTPDataTransfer.Program.Main(String[] args)
+2017/5/13 17:02:26
+System.Exception: 127.0.0.1 63269 E:\ÎÄÏ×\HTTPÍ¨ĞÅ»úÖÆ.docx
+2017/5/13 17:02:27
+System.Net.Sockets.SocketException: Ô¶³ÌÖ÷»úÇ¿ÆÈ¹Ø±ÕÁËÒ»¸öÏÖÓĞµÄÁ¬½Ó¡£
+   ÔÚ System.Net.Sockets.Socket.SendFile(String fileName, Byte[] preBuffer, Byte[] postBuffer, TransmitFileOptions flags)
+   ÔÚ System.Net.Sockets.Socket.SendFile(String fileName)
+   ÔÚ FTPDataTransfer.Program.dataConnect(String ip, Int32 port, String fileName)
+   ÔÚ FTPDataTransfer.Program.Main(String[] args)
+2017/5/13 17:02:56
+System.Exception: 127.0.0.1 50231 E:\ÎÄÏ×\Keyboard
+2017/5/13 17:02:56
+System.Net.Sockets.SocketException: ÓÉÓÚÌ×½Ó×ÖÃ»ÓĞÁ¬½Ó²¢ÇÒ(µ±Ê¹ÓÃÒ»¸ö sendto µ÷ÓÃ·¢ËÍÊı¾İ±¨Ì×½Ó×ÖÊ±)Ã»ÓĞÌá¹©µØÖ·£¬·¢ËÍ»ò½ÓÊÕÊı¾İµÄÇëÇóÃ»ÓĞ±»½ÓÊÜ¡£
+   ÔÚ System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ÔÚ FTPDataTransfer.Program.dataDisconnect()
+   ÔÚ FTPDataTransfer.Program.Main(String[] args)
+2017/5/13 17:04:00
+System.Exception: 127.0.0.1 59631 E:\digui_syntaxTree.xml
+2017/5/13 17:04:00
+System.Net.Sockets.SocketException: ÓÉÓÚÌ×½Ó×ÖÃ»ÓĞÁ¬½Ó²¢ÇÒ(µ±Ê¹ÓÃÒ»¸ö sendto µ÷ÓÃ·¢ËÍÊı¾İ±¨Ì×½Ó×ÖÊ±)Ã»ÓĞÌá¹©µØÖ·£¬·¢ËÍ»ò½ÓÊÕÊı¾İµÄÇëÇóÃ»ÓĞ±»½ÓÊÜ¡£
+   ÔÚ System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ÔÚ FTPDataTransfer.Program.dataDisconnect()
+   ÔÚ FTPDataTransfer.Program.Main(String[] args)
+2017/5/13 17:04:27
+System.Exception: 127.0.0.1 59487 E:\ASM2BIN.exe
+2017/5/13 17:04:27
+System.Net.Sockets.SocketException: ÓÉÓÚÌ×½Ó×ÖÃ»ÓĞÁ¬½Ó²¢ÇÒ(µ±Ê¹ÓÃÒ»¸ö sendto µ÷ÓÃ·¢ËÍÊı¾İ±¨Ì×½Ó×ÖÊ±)Ã»ÓĞÌá¹©µØÖ·£¬·¢ËÍ»ò½ÓÊÕÊı¾İµÄÇëÇóÃ»ÓĞ±»½ÓÊÜ¡£
+   ÔÚ System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ÔÚ FTPDataTransfer.Program.dataDisconnect()
+   ÔÚ FTPDataTransfer.Program.Main(String[] args)

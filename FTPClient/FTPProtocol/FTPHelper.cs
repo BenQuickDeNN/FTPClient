@@ -29,6 +29,10 @@ namespace FTPClient.FTPProtocol
         public const string CTRL_TYPE = "TYPE";
         public const string CTRL_PASV = "PASV";
         public const string CTRL_STOR = "STOR";
+        public const string CTRL_LIST = "LIST";
+        public const string CTRL_HELP = "HELP";
+        public const string CTRL_RETR = "RETR";
+        public const string CTRL_SIZE = "SIZE";
 
         SocketHelper socketHelper;
 
@@ -60,13 +64,9 @@ namespace FTPClient.FTPProtocol
         {
             if (socketHelper == null) return;
             Thread.Sleep(50);
-            //socketHelper.sendCtrlMessage(CTRL_AUTH + " " + "TLS" + SerialTail);
+            socketHelper.sendCtrlMessage(CTRL_USER + " " + user + SerialTail, "", false);
             Thread.Sleep(50);
-            //socketHelper.sendCtrlMessage(CTRL_AUTH + " " + "SSL" + SerialTail);
-            Thread.Sleep(50);
-            socketHelper.sendCtrlMessage(CTRL_USER + " " + user + SerialTail, "");
-            Thread.Sleep(50);
-            socketHelper.sendCtrlMessage(CTRL_PASS + " " + password + SerialTail, "");
+            socketHelper.sendCtrlMessage(CTRL_PASS + " " + password + SerialTail, "", false);
         }
         /// <summary>
         /// 上传文件
@@ -76,11 +76,27 @@ namespace FTPClient.FTPProtocol
         {
             if (socketHelper == null) return;
             Thread.Sleep(50);
-            socketHelper.sendCtrlMessage(CTRL_TYPE + " I" + SerialTail, "");// 传输二进制文件
+            socketHelper.sendCtrlMessage(CTRL_TYPE + " I" + SerialTail, "", true);// 传输二进制文件
             Thread.Sleep(50);
-            socketHelper.sendCtrlMessage(CTRL_PASV + SerialTail, "");
+            socketHelper.sendCtrlMessage(CTRL_PASV + SerialTail, "", true);
             Thread.Sleep(50);
-            socketHelper.sendCtrlMessage(CTRL_STOR + " " + Path.GetFileName(filename) + SerialTail, filename);
+            socketHelper.sendCtrlMessage(CTRL_STOR + " " + Path.GetFileName(filename) + SerialTail, filename, true);
+        }
+        /// <summary>
+        /// 下载文件
+        /// </summary>
+        /// <param name="filename"></param>
+        public void ctrlDownload(string filename)
+        {
+            if (socketHelper == null) return;
+            Thread.Sleep(50);
+            socketHelper.sendCtrlMessage(CTRL_SIZE + " " + filename + SerialTail, filename, false);
+            Thread.Sleep(50);
+            socketHelper.sendCtrlMessage(CTRL_TYPE + " I" + SerialTail, "", false);// 传输二进制文件
+            Thread.Sleep(100);
+            socketHelper.sendCtrlMessage(CTRL_PASV + SerialTail, "", false);
+            Thread.Sleep(50);
+            socketHelper.sendCtrlMessage(CTRL_RETR + " " + filename + SerialTail, filename, false);
         }
         /// <summary>
         /// 与服务器断开连接
@@ -88,7 +104,7 @@ namespace FTPClient.FTPProtocol
         public void ctrlDisconnect()
         {
             Thread.Sleep(50);
-            socketHelper.sendCtrlMessage(CTRL_QUIT + SerialTail, "");
+            socketHelper.sendCtrlMessage(CTRL_QUIT + SerialTail, "", false);
             socketHelper.ctrlDisconnect();
         }
     }
