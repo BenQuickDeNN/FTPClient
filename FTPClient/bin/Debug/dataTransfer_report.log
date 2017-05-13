@@ -79,3 +79,32 @@ System.Net.Sockets.SocketException: ÓÉÓÚÌ×½Ó×ÖÃ»ÓĞÁ¬½Ó²¢ÇÒ(µ±Ê¹ÓÃÒ»¸ö sendto µ÷Ó
    ÔÚ System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
    ÔÚ FTPDataTransfer.Program.dataDisconnect()
    ÔÚ FTPDataTransfer.Program.Main(String[] args)
+2017/5/13 19:41:27
+System.Exception: 127.0.0.1 56757 E:\Photoshop_CC_2015°²×°¼¤»î½Ì³Ì(×¢²á»ú°æ).ppt
+2017/5/13 19:41:27
+System.Net.Sockets.SocketException: Ô¶³ÌÖ÷»úÇ¿ÆÈ¹Ø±ÕÁËÒ»¸öÏÖÓĞµÄÁ¬½Ó¡£
+   ÔÚ System.Net.Sockets.Socket.SendFile(String fileName, Byte[] preBuffer, Byte[] postBuffer, TransmitFileOptions flags)
+   ÔÚ System.Net.Sockets.Socket.SendFile(String fileName)
+   ÔÚ FTPDataTransfer.Program.dataConnect(String ip, Int32 port, String fileName)
+   ÔÚ FTPDataTransfer.Program.Main(String[] args)
+2017/5/13 19:42:52
+System.Exception: 127.0.0.1 64114 E:\music\WestLife
+2017/5/13 19:42:52
+System.Net.Sockets.SocketException: ÓÉÓÚÌ×½Ó×ÖÃ»ÓĞÁ¬½Ó²¢ÇÒ(µ±Ê¹ÓÃÒ»¸ö sendto µ÷ÓÃ·¢ËÍÊı¾İ±¨Ì×½Ó×ÖÊ±)Ã»ÓĞÌá¹©µØÖ·£¬·¢ËÍ»ò½ÓÊÕÊı¾İµÄÇëÇóÃ»ÓĞ±»½ÓÊÜ¡£
+   ÔÚ System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ÔÚ FTPDataTransfer.Program.dataDisconnect()
+   ÔÚ FTPDataTransfer.Program.Main(String[] args)
+2017/5/13 19:43:18
+System.Exception: 127.0.0.1 64949 E:\data\QQimageAndCharacter.csv
+2017/5/13 19:43:18
+System.Net.Sockets.SocketException: ÓÉÓÚÌ×½Ó×ÖÃ»ÓĞÁ¬½Ó²¢ÇÒ(µ±Ê¹ÓÃÒ»¸ö sendto µ÷ÓÃ·¢ËÍÊı¾İ±¨Ì×½Ó×ÖÊ±)Ã»ÓĞÌá¹©µØÖ·£¬·¢ËÍ»ò½ÓÊÕÊı¾İµÄÇëÇóÃ»ÓĞ±»½ÓÊÜ¡£
+   ÔÚ System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ÔÚ FTPDataTransfer.Program.dataDisconnect()
+   ÔÚ FTPDataTransfer.Program.Main(String[] args)
+2017/5/13 19:45:21
+System.Exception: 127.0.0.1 55836 E:\music\A
+2017/5/13 19:45:21
+System.Net.Sockets.SocketException: ÓÉÓÚÌ×½Ó×ÖÃ»ÓĞÁ¬½Ó²¢ÇÒ(µ±Ê¹ÓÃÒ»¸ö sendto µ÷ÓÃ·¢ËÍÊı¾İ±¨Ì×½Ó×ÖÊ±)Ã»ÓĞÌá¹©µØÖ·£¬·¢ËÍ»ò½ÓÊÕÊı¾İµÄÇëÇóÃ»ÓĞ±»½ÓÊÜ¡£
+   ÔÚ System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ÔÚ FTPDataTransfer.Program.dataDisconnect()
+   ÔÚ FTPDataTransfer.Program.Main(String[] args)

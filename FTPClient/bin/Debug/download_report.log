@@ -167,3 +167,22 @@ System.Net.Sockets.SocketException: ÓÉÓÚÌ×½Ó×ÖÃ»ÓĞÁ¬½Ó²¢ÇÒ(µ±Ê¹ÓÃÒ»¸ö sendto µ÷Ó
    ÔÚ System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
    ÔÚ FTPDownload.Program.dataDisconnect()
    ÔÚ FTPDownload.Program.Main(String[] args)
+2017/5/13 19:44:40
+System.Exception: 127.0.0.1 54921 E:\projects\VS2015\FTPClient\FTPClient\bin\Debug\download\QQimageAndCharacter.csv 10120
+2017/5/13 19:44:41
+System.Net.Sockets.SocketException: ÓÉÓÚÌ×½Ó×ÖÃ»ÓĞÁ¬½Ó²¢ÇÒ(µ±Ê¹ÓÃÒ»¸ö sendto µ÷ÓÃ·¢ËÍÊı¾İ±¨Ì×½Ó×ÖÊ±)Ã»ÓĞÌá¹©µØÖ·£¬·¢ËÍ»ò½ÓÊÕÊı¾İµÄÇëÇóÃ»ÓĞ±»½ÓÊÜ¡£
+   ÔÚ System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ÔÚ FTPDownload.Program.dataDisconnect()
+   ÔÚ FTPDownload.Program.Main(String[] args)
+2017/5/13 19:47:03
+System.FormatException: ÊäÈë×Ö·û´®µÄ¸ñÊ½²»ÕıÈ·¡£
+   ÔÚ System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   ÔÚ System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   ÔÚ FTPDownload.Program.Main(String[] args)
+2017/5/13 19:48:20
+System.Exception: 127.0.0.1 64734 E:\projects\VS2015\FTPClient\FTPClient\bin\Debug\download\SeeYouAgain.ape 22209396
+2017/5/13 19:48:22
+System.Net.Sockets.SocketException: ÓÉÓÚÌ×½Ó×ÖÃ»ÓĞÁ¬½Ó²¢ÇÒ(µ±Ê¹ÓÃÒ»¸ö sendto µ÷ÓÃ·¢ËÍÊı¾İ±¨Ì×½Ó×ÖÊ±)Ã»ÓĞÌá¹©µØÖ·£¬·¢ËÍ»ò½ÓÊÕÊı¾İµÄÇëÇóÃ»ÓĞ±»½ÓÊÜ¡£
+   ÔÚ System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ÔÚ FTPDownload.Program.dataDisconnect()
+   ÔÚ FTPDownload.Program.Main(String[] args)

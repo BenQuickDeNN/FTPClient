@@ -15,8 +15,19 @@ namespace FTPDownload
         Socket dataSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
         Socket transferSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
         byte[] receiveByte = new byte[64 * 1024];
+        /// <summary>
+        /// 32MB的文件缓冲区
+        /// </summary>
+        byte[] fileByte = new byte[32 * 1024 * 1024];
         string FileName;
+        /// <summary>
+        /// 总文件大小，单位为字节
+        /// </summary>
         int FileSize;
+        /// <summary>
+        /// 收到字节计数器
+        /// </summary>
+        int receiveCounter = 0;
         static void Main(string[] args)
         {
             try
@@ -74,11 +85,24 @@ namespace FTPDownload
         {
             try
             {
-                if(!File.Exists(FileName))
+                if (receiveCounter >= FileSize)
                 {
-                    FileStream fs = new FileStream(FileName, FileMode.Create, FileAccess.Write);
-                    fs.Write(receiveByte, 0, FileSize);
-                    fs.Close();
+                    if (!File.Exists(FileName))
+                    {
+                        FileStream fs = new FileStream(FileName, FileMode.Create, FileAccess.Write);
+                        fs.Write(fileByte, 0, FileSize);
+                        fs.Close();
+                    }
+                }
+                else
+                {
+                    int oldCounter = receiveCounter;
+                    receiveCounter += receiveByte.Length;
+                    for(int i = oldCounter;i < receiveCounter;i++)
+                    {
+                        fileByte[i] = receiveByte[i % receiveByte.Length];
+                    }
+                    dataSocket.BeginReceive(receiveByte, 0, receiveByte.Length, 0, receiveCallBack, null);
                 }
             }
             catch (Exception e)

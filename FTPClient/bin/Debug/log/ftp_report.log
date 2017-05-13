@@ -197,3 +197,140 @@
 2017/5/13 17:05:07
 221 Goodbye
 
+2017/5/13 19:41:21
+220-FileZilla Server 0.9.60 beta
+220-written by Tim Kosse (tim.kosse@filezilla-project.org)
+220 Please visit https://filezilla-project.org/
+
+2017/5/13 19:41:21
+331 Password required for yourdad
+230 Logged on
+
+2017/5/13 19:41:26
+200 Type set to I
+
+2017/5/13 19:41:26
+227 Entering Passive Mode (127,0,0,1,221,181)
+
+2017/5/13 19:41:27
+150 Opening data channel for file upload to server of "/Photoshop_CC_2015??????(????).ppt"
+
+2017/5/13 19:41:27
+550 Could not open file for writing.
+
+2017/5/13 19:41:58
+221 Goodbye
+
+2017/5/13 19:42:28
+220-FileZilla Server 0.9.60 beta
+220-written by Tim Kosse (tim.kosse@filezilla-project.org)
+220 Please visit https://filezilla-project.org/
+
+2017/5/13 19:42:29
+331 Password required for yourdad
+230 Logged on
+
+2017/5/13 19:42:51
+200 Type set to I
+
+2017/5/13 19:42:52
+227 Entering Passive Mode (127,0,0,1,250,114)
+
+2017/5/13 19:42:52
+150 Opening data channel for file upload to server of "/WestLife - Leaving.flac"
+
+2017/5/13 19:42:52
+426 Connection closed; aborted transfer of "/WestLife - Leaving.flac"
+
+2017/5/13 19:43:18
+200 Type set to I
+
+2017/5/13 19:43:18
+227 Entering Passive Mode (127,0,0,1,253,181)
+
+2017/5/13 19:43:18
+150 Opening data channel for file upload to server of "/QQimageAndCharacter.csv"
+
+2017/5/13 19:43:18
+426 Connection closed; aborted transfer of "/QQimageAndCharacter.csv"
+
+2017/5/13 19:43:57
+550 File not found
+
+2017/5/13 19:43:57
+200 Type set to I
+227 Entering Passive Mode (127,0,0,1,233,57)
+550 File not found
+
+2017/5/13 19:44:36
+220-FileZilla Server 0.9.60 beta
+220-written by Tim Kosse (tim.kosse@filezilla-project.org)
+220 Please visit https://filezilla-project.org/
+
+2017/5/13 19:44:37
+331 Password required for yourdad
+230 Logged on
+
+2017/5/13 19:44:39
+213 10120
+
+2017/5/13 19:44:39
+200 Type set to I
+227 Entering Passive Mode (127,0,0,1,214,137)
+
+2017/5/13 19:44:40
+150 Opening data channel for file download from server of "/QQimageAndCharacter.csv"
+
+2017/5/13 19:44:40
+226 Successfully transferred "/QQimageAndCharacter.csv"
+
+2017/5/13 19:45:21
+200 Type set to I
+
+2017/5/13 19:45:21
+227 Entering Passive Mode (127,0,0,1,218,28)
+
+2017/5/13 19:45:21
+150 Opening data channel for file upload to server of "/A Fine Frenzy - Almost Lover.mp3"
+
+2017/5/13 19:45:21
+426 Connection closed; aborted transfer of "/A Fine Frenzy - Almost Lover.mp3"
+
+2017/5/13 19:45:34
+221 Goodbye
+
+2017/5/13 19:46:53
+220-FileZilla Server 0.9.60 beta
+220-written by Tim Kosse (tim.kosse@filezilla-project.org)
+220 Please visit https://filezilla-project.org/
+
+2017/5/13 19:46:53
+331 Password required for yourdad
+230 Logged on
+
+2017/5/13 19:47:03
+213 22209396
+
+2017/5/13 19:47:03
+200 Type set to I
+227 Entering Passive Mode (127,0,0,1,236,210)
+
+2017/5/13 19:47:14
+425 Can't open data connection for transfer of "/See you again.ape"
+
+2017/5/13 19:48:20
+213 22209396
+
+2017/5/13 19:48:20
+200 Type set to I
+227 Entering Passive Mode (127,0,0,1,252,222)
+
+2017/5/13 19:48:20
+150 Opening data channel for file download from server of "/SeeYouAgain.ape"
+
+2017/5/13 19:48:21
+226 Successfully transferred "/SeeYouAgain.ape"
+
+2017/5/13 19:50:06
+221 Goodbye
+
