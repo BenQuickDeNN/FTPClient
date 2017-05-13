@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
@@ -25,6 +26,7 @@ namespace FTPClient.FTPProtocol
         public const string CTRL_USER = "USER";
         public const string CTRL_PASS = "PASS";
         public const string CTRL_QUIT = "QUIT";
+        public const string CTRL_TYPE = "TYPE";
         public const string CTRL_PASV = "PASV";
         public const string CTRL_STOR = "STOR";
 
@@ -62,9 +64,9 @@ namespace FTPClient.FTPProtocol
             Thread.Sleep(50);
             //socketHelper.sendCtrlMessage(CTRL_AUTH + " " + "SSL" + SerialTail);
             Thread.Sleep(50);
-            socketHelper.sendCtrlMessage(CTRL_USER + " " + user + SerialTail);
+            socketHelper.sendCtrlMessage(CTRL_USER + " " + user + SerialTail, "");
             Thread.Sleep(50);
-            socketHelper.sendCtrlMessage(CTRL_PASS + " " + password + SerialTail);
+            socketHelper.sendCtrlMessage(CTRL_PASS + " " + password + SerialTail, "");
         }
         /// <summary>
         /// 上传文件
@@ -74,9 +76,11 @@ namespace FTPClient.FTPProtocol
         {
             if (socketHelper == null) return;
             Thread.Sleep(50);
-            socketHelper.sendCtrlMessage(CTRL_PASV + SerialTail);
+            socketHelper.sendCtrlMessage(CTRL_TYPE + " I" + SerialTail, "");// 传输二进制文件
             Thread.Sleep(50);
-            socketHelper.sendCtrlMessage(CTRL_STOR + " " + filename + SerialTail);
+            socketHelper.sendCtrlMessage(CTRL_PASV + SerialTail, "");
+            Thread.Sleep(50);
+            socketHelper.sendCtrlMessage(CTRL_STOR + " " + Path.GetFileName(filename) + SerialTail, filename);
         }
         /// <summary>
         /// 与服务器断开连接
@@ -84,7 +88,7 @@ namespace FTPClient.FTPProtocol
         public void ctrlDisconnect()
         {
             Thread.Sleep(50);
-            socketHelper.sendCtrlMessage(CTRL_QUIT + SerialTail);
+            socketHelper.sendCtrlMessage(CTRL_QUIT + SerialTail, "");
             socketHelper.ctrlDisconnect();
         }
     }

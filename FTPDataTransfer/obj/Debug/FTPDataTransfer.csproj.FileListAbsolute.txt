@@ -1,0 +1,4 @@
+E:\projects\VS2015\FTPClient\FTPDataTransfer\bin\Debug\FTPDataTransfer.exe
+E:\projects\VS2015\FTPClient\FTPDataTransfer\bin\Debug\FTPDataTransfer.pdb
+E:\projects\VS2015\FTPClient\FTPDataTransfer\obj\Debug\FTPDataTransfer.exe
+E:\projects\VS2015\FTPClient\FTPDataTransfer\obj\Debug\FTPDataTransfer.pdb

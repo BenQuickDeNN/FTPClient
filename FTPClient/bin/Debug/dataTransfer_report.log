@@ -1,0 +1,49 @@
+2017/5/13 15:08:05
+System.Exception: 127.0.0.1 61204 test.txt
+2017/5/13 15:10:07
+System.Exception: 127.0.0.1 62223 E:\test.txt
+2017/5/13 15:11:19
+System.Exception: 127.0.0.1 56067 E:\test.txt
+2017/5/13 15:11:20
+System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:56067
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 FTPDataTransfer.Program.dataConnect(String ip, Int32 port, String fileName)
+   在 FTPDataTransfer.Program.Main(String[] args)
+2017/5/13 15:13:37
+System.Exception: 127.0.0.1 49932 E:\test.txt
+2017/5/13 15:13:38
+System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:49932
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 FTPDataTransfer.Program.dataConnect(String ip, Int32 port, String fileName)
+   在 FTPDataTransfer.Program.Main(String[] args)
+2017/5/13 15:16:14
+System.Exception: 127.0.0.1 64003 E:\test.txt
+2017/5/13 15:16:15
+System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:64003
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   在 FTPDataTransfer.Program.dataConnect(String ip, Int32 port, String fileName)
+   在 FTPDataTransfer.Program.Main(String[] args)
+2017/5/13 15:16:43
+System.Exception: 127.0.0.1 63974 E:\test.txt
+2017/5/13 15:16:43
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   在 FTPDataTransfer.Program.dataDisconnect()
+   在 FTPDataTransfer.Program.Main(String[] args)
+2017/5/13 15:18:07
+System.Exception: 127.0.0.1 59153 E:\图片\XJTU.jpg
+2017/5/13 15:18:07
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   在 FTPDataTransfer.Program.dataDisconnect()
+   在 FTPDataTransfer.Program.Main(String[] args)
+2017/5/13 15:18:52
+System.Exception: 127.0.0.1 60309 E:\图片\abc.jpg
+2017/5/13 15:18:52
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   在 FTPDataTransfer.Program.dataDisconnect()
+   在 FTPDataTransfer.Program.Main(String[] args)

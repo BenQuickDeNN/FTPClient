@@ -105,7 +105,7 @@ namespace FTPClient
             if (ftpHelper == null) return;
             if (openFileDialog_upload.ShowDialog() == DialogResult.OK)
             {
-                string filePath = Path.GetFileName(openFileDialog_upload.FileName);
+                string filePath = openFileDialog_upload.FileName;
                 ftpHelper.ctrlUpload(filePath);
             }
         }

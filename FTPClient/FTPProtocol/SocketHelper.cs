@@ -17,7 +17,8 @@ namespace FTPClient.FTPProtocol
     class SocketHelper
     {
         Socket ctrlSocket;
-        Socket dataSocket;
+        string ServerIP;
+        string FileName;
         byte[] receiveByte = new byte[64 * 1024];
         AsyncCallback asyncCallback;
         /// <summary>
@@ -27,7 +28,6 @@ namespace FTPClient.FTPProtocol
         public SocketHelper(RichTextBox richTextBoxConsole)
         {
             ctrlSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-            dataSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             asyncCallback = new AsyncCallback(this.receiveCallBack);
             this.richTextBoxConsole = richTextBoxConsole;
         }
@@ -39,8 +39,8 @@ namespace FTPClient.FTPProtocol
         public void ctrlConnect(string IP, int ctrlPort)
         {
             if (ctrlSocket == null) return;
-            if (dataSocket == null) return;
             IPEndPoint ipEndPoint = new IPEndPoint(IPAddress.Parse(IP), ctrlPort);
+            ServerIP = IP;
             ctrlSocket.Connect(ipEndPoint);
             ctrlSocket.BeginReceive(receiveByte, 0, receiveByte.Length, 0, asyncCallback, null);
         }
@@ -59,11 +59,12 @@ namespace FTPClient.FTPProtocol
         /// 发送消息
         /// </summary>
         /// <param name="msg"></param>
-        public void sendCtrlMessage(string msg)
+        public void sendCtrlMessage(string msg, string fileName)
         {
             if (ctrlSocket == null) return;
             if (!ctrlSocket.Connected) return;
             byte[] msgByte = Encoding.ASCII.GetBytes(msg);
+            FileName = fileName;
             ctrlSocket.Send(msgByte);
         }
         /// <summary>
@@ -84,19 +85,21 @@ namespace FTPClient.FTPProtocol
                 if(receive_content.Contains("227 Entering Passive Mode"))
                 {
                     int startIndex = receive_content.IndexOf('(') + 1;
-                    string param_s = receive_content.Substring(receive_content.IndexOf('(') + 1, receive_content.Length - startIndex - 4);
+                    string param_s = receive_content.Substring(receive_content.IndexOf('(') + 1, receive_content.Length - startIndex - 3);
                     /*
                     richTextBoxConsole.Invoke(new MethodInvoker(delegate
                     {
                         richTextBoxConsole.AppendText(DateTime.Now.ToString() + "\n" + param_s + "\n");
                     }));*/
-                    int dataPort = int.Parse(CodeAnalysis.getValueString("port_param " + param_s)[4]) * 256 +
-                        int.Parse(CodeAnalysis.getValueString("port_param " + param_s)[5]);
+                    int num1 = int.Parse(CodeAnalysis.getValueString("port_param " + param_s)[4]);
+                    int num2 = int.Parse(CodeAnalysis.getValueString("port_param " + param_s)[5]);
+                    int dataPort = num1 * 256 + num2;
                     richTextBoxConsole.Invoke(new MethodInvoker(delegate
                     {
                         richTextBoxConsole.AppendText(DateTime.Now.ToString() + "\n" + "get data port : " + dataPort.ToString() + "\n");
                     }));
                     /* 启动数据传输进程 */
+                    CMDMethod.CMDComand.executeDataTransferProcess(ServerIP, dataPort, FileName);
                 }
                 ctrlSocket.BeginReceive(receiveByte, 0, receiveByte.Length, 0, asyncCallback, null);
             }
