@@ -1,0 +1,123 @@
+2017/5/13 9:57:54
+System.ArgumentException: 已添加了具有相同键的项。
+   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   在 FTPClient.ConfigScript.ConfigFile.loadConfig() 位置 E:\projects\VS2015\FTPClient\FTPClient\ConfigScript\ConfigFile.cs:行号 36
+2017/5/13 9:59:47
+System.ArgumentException: 已添加了具有相同键的项。
+   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   在 FTPClient.ConfigScript.ConfigFile.loadConfig() 位置 E:\projects\VS2015\FTPClient\FTPClient\ConfigScript\ConfigFile.cs:行号 36
+2017/5/13 10:00:45
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.ThrowHelper.ThrowKeyNotFoundException()
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 FTPClient.FormMain.initializeWidget() 位置 E:\projects\VS2015\FTPClient\FTPClient\Form1.cs:行号 36
+2017/5/13 10:01:47
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.ThrowHelper.ThrowKeyNotFoundException()
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 FTPClient.FormMain.initializeWidget() 位置 E:\projects\VS2015\FTPClient\FTPClient\Form1.cs:行号 36
+2017/5/13 10:02:48
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。
+   在 System.ThrowHelper.ThrowKeyNotFoundException()
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 FTPClient.FormMain.initializeWidget() 位置 E:\projects\VS2015\FTPClient\FTPClient\Form1.cs:行号 36
+2017/5/13 11:25:59
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   在 FTPClient.FTPProtocol.SocketHelper.receiveCallBack(IAsyncResult iar) 位置 E:\projects\VS2015\FTPClient\FTPClient\FTPProtocol\SocketHelper.cs:行号 75
+2017/5/13 11:26:06
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   在 FTPClient.FTPProtocol.SocketHelper.receiveCallBack(IAsyncResult iar) 位置 E:\projects\VS2015\FTPClient\FTPClient\FTPProtocol\SocketHelper.cs:行号 75
+2017/5/13 11:26:11
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   在 FTPClient.FTPProtocol.SocketHelper.receiveCallBack(IAsyncResult iar) 位置 E:\projects\VS2015\FTPClient\FTPClient\FTPProtocol\SocketHelper.cs:行号 75
+2017/5/13 11:27:52
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   在 FTPClient.FTPProtocol.SocketHelper.receiveCallBack(IAsyncResult iar) 位置 E:\projects\VS2015\FTPClient\FTPClient\FTPProtocol\SocketHelper.cs:行号 75
+2017/5/13 11:27:54
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   在 FTPClient.FTPProtocol.SocketHelper.receiveCallBack(IAsyncResult iar) 位置 E:\projects\VS2015\FTPClient\FTPClient\FTPProtocol\SocketHelper.cs:行号 75
+2017/5/13 11:29:11
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   在 FTPClient.FTPProtocol.SocketHelper.receiveCallBack(IAsyncResult iar) 位置 E:\projects\VS2015\FTPClient\FTPClient\FTPProtocol\SocketHelper.cs:行号 79
+2017/5/13 11:29:13
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   在 FTPClient.FTPProtocol.SocketHelper.receiveCallBack(IAsyncResult iar) 位置 E:\projects\VS2015\FTPClient\FTPClient\FTPProtocol\SocketHelper.cs:行号 79
+2017/5/13 11:29:16
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   在 FTPClient.FTPProtocol.SocketHelper.receiveCallBack(IAsyncResult iar) 位置 E:\projects\VS2015\FTPClient\FTPClient\FTPProtocol\SocketHelper.cs:行号 79
+2017/5/13 11:30:07
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   在 FTPClient.FTPProtocol.SocketHelper.receiveCallBack(IAsyncResult iar) 位置 E:\projects\VS2015\FTPClient\FTPClient\FTPProtocol\SocketHelper.cs:行号 79
+2017/5/13 11:30:09
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   在 FTPClient.FTPProtocol.SocketHelper.receiveCallBack(IAsyncResult iar) 位置 E:\projects\VS2015\FTPClient\FTPClient\FTPProtocol\SocketHelper.cs:行号 79
+2017/5/13 11:30:13
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   在 FTPClient.FTPProtocol.SocketHelper.receiveCallBack(IAsyncResult iar) 位置 E:\projects\VS2015\FTPClient\FTPClient\FTPProtocol\SocketHelper.cs:行号 79
+2017/5/13 11:35:56
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   在 FTPClient.FTPProtocol.SocketHelper.receiveCallBack(IAsyncResult iar) 位置 E:\projects\VS2015\FTPClient\FTPClient\FTPProtocol\SocketHelper.cs:行号 79
+2017/5/13 11:37:20
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   在 FTPClient.FTPProtocol.SocketHelper.receiveCallBack(IAsyncResult iar) 位置 E:\projects\VS2015\FTPClient\FTPClient\FTPProtocol\SocketHelper.cs:行号 79
+2017/5/13 11:40:17
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   在 FTPClient.FTPProtocol.SocketHelper.receiveCallBack(IAsyncResult iar) 位置 E:\projects\VS2015\FTPClient\FTPClient\FTPProtocol\SocketHelper.cs:行号 79
+2017/5/13 11:40:21
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   在 FTPClient.FTPProtocol.SocketHelper.receiveCallBack(IAsyncResult iar) 位置 E:\projects\VS2015\FTPClient\FTPClient\FTPProtocol\SocketHelper.cs:行号 79
+2017/5/13 11:40:26
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   在 FTPClient.FTPProtocol.SocketHelper.receiveCallBack(IAsyncResult iar) 位置 E:\projects\VS2015\FTPClient\FTPClient\FTPProtocol\SocketHelper.cs:行号 79
+2017/5/13 11:40:33
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   在 FTPClient.FTPProtocol.SocketHelper.receiveCallBack(IAsyncResult iar) 位置 E:\projects\VS2015\FTPClient\FTPClient\FTPProtocol\SocketHelper.cs:行号 79
+2017/5/13 11:40:57
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   在 FTPClient.FTPProtocol.SocketHelper.receiveCallBack(IAsyncResult iar) 位置 E:\projects\VS2015\FTPClient\FTPClient\FTPProtocol\SocketHelper.cs:行号 79
+2017/5/13 11:50:29
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   在 FTPClient.FTPProtocol.SocketHelper.receiveCallBack(IAsyncResult iar) 位置 E:\projects\VS2015\FTPClient\FTPClient\FTPProtocol\SocketHelper.cs:行号 79
+2017/5/13 11:53:33
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   在 FTPClient.FTPProtocol.SocketHelper.receiveCallBack(IAsyncResult iar) 位置 E:\projects\VS2015\FTPClient\FTPClient\FTPProtocol\SocketHelper.cs:行号 79
+2017/5/13 11:53:39
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   在 FTPClient.FTPProtocol.SocketHelper.receiveCallBack(IAsyncResult iar) 位置 E:\projects\VS2015\FTPClient\FTPClient\FTPProtocol\SocketHelper.cs:行号 79
+2017/5/13 11:54:48
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   在 FTPClient.FTPProtocol.SocketHelper.receiveCallBack(IAsyncResult iar) 位置 E:\projects\VS2015\FTPClient\FTPClient\FTPProtocol\SocketHelper.cs:行号 79
+2017/5/13 12:03:25
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   在 FTPClient.FTPProtocol.SocketHelper.receiveCallBack(IAsyncResult iar) 位置 E:\projects\VS2015\FTPClient\FTPClient\FTPProtocol\SocketHelper.cs:行号 82
+2017/5/13 12:03:40
+System.Net.Sockets.SocketException: 由于套接字没有连接并且(当使用一个 sendto 调用发送数据报套接字时)没有提供地址，发送或接收数据的请求没有被接受。
+   在 System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   在 FTPClient.FTPProtocol.SocketHelper.receiveCallBack(IAsyncResult iar) 位置 E:\projects\VS2015\FTPClient\FTPClient\FTPProtocol\SocketHelper.cs:行号 82

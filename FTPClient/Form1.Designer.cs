@@ -37,7 +37,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textBox_User = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox_Password = new System.Windows.Forms.TextBox();
             this.button_connect = new System.Windows.Forms.Button();
             this.button_disconnect = new System.Windows.Forms.Button();
             this.button_Upload = new System.Windows.Forms.Button();
@@ -76,6 +76,7 @@
             // 
             // numericUpDown_CtrlPort
             // 
+            this.numericUpDown_CtrlPort.Enabled = false;
             this.numericUpDown_CtrlPort.Location = new System.Drawing.Point(84, 35);
             this.numericUpDown_CtrlPort.Name = "numericUpDown_CtrlPort";
             this.numericUpDown_CtrlPort.Size = new System.Drawing.Size(120, 21);
@@ -92,6 +93,7 @@
             // 
             // numericUpDown_DataPort
             // 
+            this.numericUpDown_DataPort.Enabled = false;
             this.numericUpDown_DataPort.Location = new System.Drawing.Point(84, 61);
             this.numericUpDown_DataPort.Name = "numericUpDown_DataPort";
             this.numericUpDown_DataPort.Size = new System.Drawing.Size(120, 21);
@@ -122,12 +124,12 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Password";
             // 
-            // textBox1
+            // textBox_Password
             // 
-            this.textBox1.Location = new System.Drawing.Point(298, 60);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(183, 21);
-            this.textBox1.TabIndex = 9;
+            this.textBox_Password.Location = new System.Drawing.Point(298, 60);
+            this.textBox_Password.Name = "textBox_Password";
+            this.textBox_Password.Size = new System.Drawing.Size(183, 21);
+            this.textBox_Password.TabIndex = 9;
             // 
             // button_connect
             // 
@@ -137,6 +139,7 @@
             this.button_connect.TabIndex = 10;
             this.button_connect.Text = "Connect";
             this.button_connect.UseVisualStyleBackColor = true;
+            this.button_connect.Click += new System.EventHandler(this.widgetClickEvent);
             // 
             // button_disconnect
             // 
@@ -146,6 +149,7 @@
             this.button_disconnect.TabIndex = 11;
             this.button_disconnect.Text = "Disconnect";
             this.button_disconnect.UseVisualStyleBackColor = true;
+            this.button_disconnect.Click += new System.EventHandler(this.widgetClickEvent);
             // 
             // button_Upload
             // 
@@ -155,6 +159,7 @@
             this.button_Upload.TabIndex = 12;
             this.button_Upload.Text = "Upload File";
             this.button_Upload.UseVisualStyleBackColor = true;
+            this.button_Upload.Click += new System.EventHandler(this.widgetClickEvent);
             // 
             // richTextBox_Console
             // 
@@ -172,6 +177,7 @@
             this.button_Download.TabIndex = 14;
             this.button_Download.Text = "Download";
             this.button_Download.UseVisualStyleBackColor = true;
+            this.button_Download.Click += new System.EventHandler(this.widgetClickEvent);
             // 
             // progressBar_UploadFile
             // 
@@ -199,7 +205,7 @@
             this.Controls.Add(this.button_Upload);
             this.Controls.Add(this.button_disconnect);
             this.Controls.Add(this.button_connect);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBox_Password);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox_User);
             this.Controls.Add(this.label4);
@@ -229,7 +235,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox_User;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox_Password;
         private System.Windows.Forms.Button button_connect;
         private System.Windows.Forms.Button button_disconnect;
         private System.Windows.Forms.Button button_Upload;
