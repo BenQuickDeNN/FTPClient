@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -57,6 +58,7 @@ namespace FTPClient
         {
             if (sender.Equals(button_connect)) event_Connect();
             if (sender.Equals(button_disconnect)) event_Disconnect();
+            if (sender.Equals(button_Upload)) event_Upload();
         }
         /// <summary>
         /// 连接事件
@@ -94,6 +96,18 @@ namespace FTPClient
             button_disconnect.Enabled = false;
             button_Upload.Enabled = false;
             button_Download.Enabled = false;
+        }
+        /// <summary>
+        /// 上传文件
+        /// </summary>
+        void event_Upload()
+        {
+            if (ftpHelper == null) return;
+            if (openFileDialog_upload.ShowDialog() == DialogResult.OK)
+            {
+                string filePath = Path.GetFileName(openFileDialog_upload.FileName);
+                ftpHelper.ctrlUpload(filePath);
+            }
         }
     }
 }

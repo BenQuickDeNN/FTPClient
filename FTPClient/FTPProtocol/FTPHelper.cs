@@ -14,7 +14,6 @@ namespace FTPClient.FTPProtocol
     class FTPHelper
     {
         public const int FTPCtrlPort = 21;
-        public const int FTPDataPort = 20;
         /// <summary>
         /// 控制字结尾
         /// </summary>
@@ -26,6 +25,8 @@ namespace FTPClient.FTPProtocol
         public const string CTRL_USER = "USER";
         public const string CTRL_PASS = "PASS";
         public const string CTRL_QUIT = "QUIT";
+        public const string CTRL_PASV = "PASV";
+        public const string CTRL_STOR = "STOR";
 
         SocketHelper socketHelper;
 
@@ -64,6 +65,18 @@ namespace FTPClient.FTPProtocol
             socketHelper.sendCtrlMessage(CTRL_USER + " " + user + SerialTail);
             Thread.Sleep(50);
             socketHelper.sendCtrlMessage(CTRL_PASS + " " + password + SerialTail);
+        }
+        /// <summary>
+        /// 上传文件
+        /// </summary>
+        /// <param name="filename"></param>
+        public void ctrlUpload(string filename)
+        {
+            if (socketHelper == null) return;
+            Thread.Sleep(50);
+            socketHelper.sendCtrlMessage(CTRL_PASV + SerialTail);
+            Thread.Sleep(50);
+            socketHelper.sendCtrlMessage(CTRL_STOR + " " + filename + SerialTail);
         }
         /// <summary>
         /// 与服务器断开连接

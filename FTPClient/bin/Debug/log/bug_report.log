@@ -121,3 +121,61 @@ System.Net.Sockets.SocketException: ÓÉÓÚÌ×½Ó×ÖÃ»ÓĞÁ¬½Ó²¢ÇÒ(µ±Ê¹ÓÃÒ»¸ö sendto µ÷Ó
 System.Net.Sockets.SocketException: ÓÉÓÚÌ×½Ó×ÖÃ»ÓĞÁ¬½Ó²¢ÇÒ(µ±Ê¹ÓÃÒ»¸ö sendto µ÷ÓÃ·¢ËÍÊı¾İ±¨Ì×½Ó×ÖÊ±)Ã»ÓĞÌá¹©µØÖ·£¬·¢ËÍ»ò½ÓÊÕÊı¾İµÄÇëÇóÃ»ÓĞ±»½ÓÊÜ¡£
    ÔÚ System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
    ÔÚ FTPClient.FTPProtocol.SocketHelper.receiveCallBack(IAsyncResult iar) Î»ÖÃ E:\projects\VS2015\FTPClient\FTPClient\FTPProtocol\SocketHelper.cs:ĞĞºÅ 82
+2017/5/13 13:21:45
+System.Net.Sockets.SocketException: ÓÉÓÚÌ×½Ó×ÖÃ»ÓĞÁ¬½Ó²¢ÇÒ(µ±Ê¹ÓÃÒ»¸ö sendto µ÷ÓÃ·¢ËÍÊı¾İ±¨Ì×½Ó×ÖÊ±)Ã»ÓĞÌá¹©µØÖ·£¬·¢ËÍ»ò½ÓÊÕÊı¾İµÄÇëÇóÃ»ÓĞ±»½ÓÊÜ¡£
+   ÔÚ System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   ÔÚ FTPClient.FTPProtocol.SocketHelper.receiveCallBack(IAsyncResult iar) Î»ÖÃ E:\projects\VS2015\FTPClient\FTPClient\FTPProtocol\SocketHelper.cs:ĞĞºÅ 82
+2017/5/13 13:22:30
+System.Net.Sockets.SocketException: ÓÉÓÚÌ×½Ó×ÖÃ»ÓĞÁ¬½Ó²¢ÇÒ(µ±Ê¹ÓÃÒ»¸ö sendto µ÷ÓÃ·¢ËÍÊı¾İ±¨Ì×½Ó×ÖÊ±)Ã»ÓĞÌá¹©µØÖ·£¬·¢ËÍ»ò½ÓÊÕÊı¾İµÄÇëÇóÃ»ÓĞ±»½ÓÊÜ¡£
+   ÔÚ System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   ÔÚ FTPClient.FTPProtocol.SocketHelper.receiveCallBack(IAsyncResult iar) Î»ÖÃ E:\projects\VS2015\FTPClient\FTPClient\FTPProtocol\SocketHelper.cs:ĞĞºÅ 82
+2017/5/13 13:24:13
+System.Net.Sockets.SocketException: ÓÉÓÚÌ×½Ó×ÖÃ»ÓĞÁ¬½Ó²¢ÇÒ(µ±Ê¹ÓÃÒ»¸ö sendto µ÷ÓÃ·¢ËÍÊı¾İ±¨Ì×½Ó×ÖÊ±)Ã»ÓĞÌá¹©µØÖ·£¬·¢ËÍ»ò½ÓÊÕÊı¾İµÄÇëÇóÃ»ÓĞ±»½ÓÊÜ¡£
+   ÔÚ System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   ÔÚ FTPClient.FTPProtocol.SocketHelper.receiveCallBack(IAsyncResult iar) Î»ÖÃ E:\projects\VS2015\FTPClient\FTPClient\FTPProtocol\SocketHelper.cs:ĞĞºÅ 82
+2017/5/13 13:31:36
+System.ArgumentOutOfRangeException: ¡°9700¡±µÄÖµ¶ÔÓÚ¡°Value¡±ÎŞĞ§¡£¡°Value¡±Ó¦½éÓÚ 'Minimum' ºÍ 'Maximum' Ö®¼ä¡£
+²ÎÊıÃû: Value
+   ÔÚ System.Windows.Forms.NumericUpDown.set_Value(Decimal value)
+   ÔÚ FTPClient.FormMain.initializeWidget() Î»ÖÃ E:\projects\VS2015\FTPClient\FTPClient\Form1.cs:ĞĞºÅ 41
+2017/5/13 13:32:17
+System.ArgumentOutOfRangeException: ¡°9700¡±µÄÖµ¶ÔÓÚ¡°Value¡±ÎŞĞ§¡£¡°Value¡±Ó¦½éÓÚ 'Minimum' ºÍ 'Maximum' Ö®¼ä¡£
+²ÎÊıÃû: Value
+   ÔÚ System.Windows.Forms.NumericUpDown.set_Value(Decimal value)
+   ÔÚ FTPClient.FormMain.initializeWidget() Î»ÖÃ E:\projects\VS2015\FTPClient\FTPClient\Form1.cs:ĞĞºÅ 41
+2017/5/13 13:32:56
+System.Net.Sockets.SocketException: ÓÉÓÚÌ×½Ó×ÖÃ»ÓĞÁ¬½Ó²¢ÇÒ(µ±Ê¹ÓÃÒ»¸ö sendto µ÷ÓÃ·¢ËÍÊı¾İ±¨Ì×½Ó×ÖÊ±)Ã»ÓĞÌá¹©µØÖ·£¬·¢ËÍ»ò½ÓÊÕÊı¾İµÄÇëÇóÃ»ÓĞ±»½ÓÊÜ¡£
+   ÔÚ System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   ÔÚ FTPClient.FTPProtocol.SocketHelper.receiveCallBack(IAsyncResult iar) Î»ÖÃ E:\projects\VS2015\FTPClient\FTPClient\FTPProtocol\SocketHelper.cs:ĞĞºÅ 82
+2017/5/13 13:34:17
+System.Net.Sockets.SocketException: ÓÉÓÚÌ×½Ó×ÖÃ»ÓĞÁ¬½Ó²¢ÇÒ(µ±Ê¹ÓÃÒ»¸ö sendto µ÷ÓÃ·¢ËÍÊı¾İ±¨Ì×½Ó×ÖÊ±)Ã»ÓĞÌá¹©µØÖ·£¬·¢ËÍ»ò½ÓÊÕÊı¾İµÄÇëÇóÃ»ÓĞ±»½ÓÊÜ¡£
+   ÔÚ System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   ÔÚ FTPClient.FTPProtocol.SocketHelper.receiveCallBack(IAsyncResult iar) Î»ÖÃ E:\projects\VS2015\FTPClient\FTPClient\FTPProtocol\SocketHelper.cs:ĞĞºÅ 82
+2017/5/13 13:36:27
+System.Net.Sockets.SocketException: ÓÉÓÚÌ×½Ó×ÖÃ»ÓĞÁ¬½Ó²¢ÇÒ(µ±Ê¹ÓÃÒ»¸ö sendto µ÷ÓÃ·¢ËÍÊı¾İ±¨Ì×½Ó×ÖÊ±)Ã»ÓĞÌá¹©µØÖ·£¬·¢ËÍ»ò½ÓÊÕÊı¾İµÄÇëÇóÃ»ÓĞ±»½ÓÊÜ¡£
+   ÔÚ System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   ÔÚ FTPClient.FTPProtocol.SocketHelper.receiveCallBack(IAsyncResult iar) Î»ÖÃ E:\projects\VS2015\FTPClient\FTPClient\FTPProtocol\SocketHelper.cs:ĞĞºÅ 82
+2017/5/13 13:37:50
+System.Net.Sockets.SocketException: ÓÉÓÚÌ×½Ó×ÖÃ»ÓĞÁ¬½Ó²¢ÇÒ(µ±Ê¹ÓÃÒ»¸ö sendto µ÷ÓÃ·¢ËÍÊı¾İ±¨Ì×½Ó×ÖÊ±)Ã»ÓĞÌá¹©µØÖ·£¬·¢ËÍ»ò½ÓÊÕÊı¾İµÄÇëÇóÃ»ÓĞ±»½ÓÊÜ¡£
+   ÔÚ System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   ÔÚ FTPClient.FTPProtocol.SocketHelper.receiveCallBack(IAsyncResult iar) Î»ÖÃ E:\projects\VS2015\FTPClient\FTPClient\FTPProtocol\SocketHelper.cs:ĞĞºÅ 83
+2017/5/13 13:39:54
+System.Net.Sockets.SocketException: ÓÉÓÚÌ×½Ó×ÖÃ»ÓĞÁ¬½Ó²¢ÇÒ(µ±Ê¹ÓÃÒ»¸ö sendto µ÷ÓÃ·¢ËÍÊı¾İ±¨Ì×½Ó×ÖÊ±)Ã»ÓĞÌá¹©µØÖ·£¬·¢ËÍ»ò½ÓÊÕÊı¾İµÄÇëÇóÃ»ÓĞ±»½ÓÊÜ¡£
+   ÔÚ System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   ÔÚ FTPClient.FTPProtocol.SocketHelper.receiveCallBack(IAsyncResult iar) Î»ÖÃ E:\projects\VS2015\FTPClient\FTPClient\FTPProtocol\SocketHelper.cs:ĞĞºÅ 91
+2017/5/13 13:41:44
+System.Net.Sockets.SocketException: ÓÉÓÚÌ×½Ó×ÖÃ»ÓĞÁ¬½Ó²¢ÇÒ(µ±Ê¹ÓÃÒ»¸ö sendto µ÷ÓÃ·¢ËÍÊı¾İ±¨Ì×½Ó×ÖÊ±)Ã»ÓĞÌá¹©µØÖ·£¬·¢ËÍ»ò½ÓÊÕÊı¾İµÄÇëÇóÃ»ÓĞ±»½ÓÊÜ¡£
+   ÔÚ System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   ÔÚ FTPClient.FTPProtocol.SocketHelper.receiveCallBack(IAsyncResult iar) Î»ÖÃ E:\projects\VS2015\FTPClient\FTPClient\FTPProtocol\SocketHelper.cs:ĞĞºÅ 92
+2017/5/13 13:42:13
+System.Net.Sockets.SocketException: ÓÉÓÚÌ×½Ó×ÖÃ»ÓĞÁ¬½Ó²¢ÇÒ(µ±Ê¹ÓÃÒ»¸ö sendto µ÷ÓÃ·¢ËÍÊı¾İ±¨Ì×½Ó×ÖÊ±)Ã»ÓĞÌá¹©µØÖ·£¬·¢ËÍ»ò½ÓÊÕÊı¾İµÄÇëÇóÃ»ÓĞ±»½ÓÊÜ¡£
+   ÔÚ System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   ÔÚ FTPClient.FTPProtocol.SocketHelper.receiveCallBack(IAsyncResult iar) Î»ÖÃ E:\projects\VS2015\FTPClient\FTPClient\FTPProtocol\SocketHelper.cs:ĞĞºÅ 92
+2017/5/13 13:42:38
+System.Net.Sockets.SocketException: ÓÉÓÚÌ×½Ó×ÖÃ»ÓĞÁ¬½Ó²¢ÇÒ(µ±Ê¹ÓÃÒ»¸ö sendto µ÷ÓÃ·¢ËÍÊı¾İ±¨Ì×½Ó×ÖÊ±)Ã»ÓĞÌá¹©µØÖ·£¬·¢ËÍ»ò½ÓÊÕÊı¾İµÄÇëÇóÃ»ÓĞ±»½ÓÊÜ¡£
+   ÔÚ System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   ÔÚ FTPClient.FTPProtocol.SocketHelper.receiveCallBack(IAsyncResult iar) Î»ÖÃ E:\projects\VS2015\FTPClient\FTPClient\FTPProtocol\SocketHelper.cs:ĞĞºÅ 92
+2017/5/13 13:47:03
+System.Net.Sockets.SocketException: ÓÉÓÚÌ×½Ó×ÖÃ»ÓĞÁ¬½Ó²¢ÇÒ(µ±Ê¹ÓÃÒ»¸ö sendto µ÷ÓÃ·¢ËÍÊı¾İ±¨Ì×½Ó×ÖÊ±)Ã»ÓĞÌá¹©µØÖ·£¬·¢ËÍ»ò½ÓÊÕÊı¾İµÄÇëÇóÃ»ÓĞ±»½ÓÊÜ¡£
+   ÔÚ System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   ÔÚ FTPClient.FTPProtocol.SocketHelper.receiveCallBack(IAsyncResult iar) Î»ÖÃ E:\projects\VS2015\FTPClient\FTPClient\FTPProtocol\SocketHelper.cs:ĞĞºÅ 100

@@ -45,6 +45,7 @@
             this.button_Download = new System.Windows.Forms.Button();
             this.progressBar_UploadFile = new System.Windows.Forms.ProgressBar();
             this.progressBar_download = new System.Windows.Forms.ProgressBar();
+            this.openFileDialog_upload = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_CtrlPort)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_DataPort)).BeginInit();
             this.SuspendLayout();
@@ -90,6 +91,7 @@
             this.label3.Size = new System.Drawing.Size(59, 12);
             this.label3.TabIndex = 4;
             this.label3.Text = "Data Port";
+            this.label3.Visible = false;
             // 
             // numericUpDown_DataPort
             // 
@@ -98,6 +100,7 @@
             this.numericUpDown_DataPort.Name = "numericUpDown_DataPort";
             this.numericUpDown_DataPort.Size = new System.Drawing.Size(120, 21);
             this.numericUpDown_DataPort.TabIndex = 5;
+            this.numericUpDown_DataPort.Visible = false;
             // 
             // label4
             // 
@@ -243,6 +246,7 @@
         private System.Windows.Forms.Button button_Download;
         private System.Windows.Forms.ProgressBar progressBar_UploadFile;
         private System.Windows.Forms.ProgressBar progressBar_download;
+        private System.Windows.Forms.OpenFileDialog openFileDialog_upload;
     }
 }
 
