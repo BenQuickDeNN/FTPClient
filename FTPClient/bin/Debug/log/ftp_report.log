@@ -334,3 +334,69 @@
 2017/5/13 19:50:06
 221 Goodbye
 
+2017/5/14 21:28:53
+220-FileZilla Server 0.9.60 beta
+220-written by Tim Kosse (tim.kosse@filezilla-project.org)
+220 Please visit https://filezilla-project.org/
+
+2017/5/14 21:28:53
+331 Password required for yourdad
+230 Logged on
+
+2017/5/14 21:29:21
+213 22209396
+
+2017/5/14 21:29:21
+200 Type set to I
+227 Entering Passive Mode (127,0,0,1,243,213)
+
+2017/5/14 21:29:25
+150 Opening data channel for file download from server of "/SeeYouAgain.ape"
+
+2017/5/14 21:29:25
+226 Successfully transferred "/SeeYouAgain.ape"
+
+2017/5/14 21:30:14
+550 File not found
+
+2017/5/14 21:30:15
+200 Type set to I
+227 Entering Passive Mode (127,0,0,1,212,198)
+550 File not found
+
+2017/5/14 21:30:38
+220-FileZilla Server 0.9.60 beta
+220-written by Tim Kosse (tim.kosse@filezilla-project.org)
+220 Please visit https://filezilla-project.org/
+
+2017/5/14 21:30:38
+331 Password required for yourdad
+230 Logged on
+
+2017/5/14 21:30:48
+200 Type set to I
+
+2017/5/14 21:30:48
+227 Entering Passive Mode (127,0,0,1,245,37)
+
+2017/5/14 21:30:48
+150 Opening data channel for file upload to server of "/659243.mp3"
+
+2017/5/14 21:30:48
+426 Connection closed; aborted transfer of "/659243.mp3"
+
+2017/5/14 21:31:35
+200 Type set to I
+
+2017/5/14 21:31:35
+227 Entering Passive Mode (127,0,0,1,246,189)
+
+2017/5/14 21:31:35
+150 Opening data channel for file upload to server of "/231542.mp3"
+
+2017/5/14 21:31:36
+426 Connection closed; aborted transfer of "/231542.mp3"
+
+2017/5/14 21:31:51
+221 Goodbye
+

@@ -186,3 +186,10 @@ System.Net.Sockets.SocketException: ÓÉÓÚÌ×½Ó×ÖÃ»ÓĞÁ¬½Ó²¢ÇÒ(µ±Ê¹ÓÃÒ»¸ö sendto µ÷Ó
    ÔÚ System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
    ÔÚ FTPDownload.Program.dataDisconnect()
    ÔÚ FTPDownload.Program.Main(String[] args)
+2017/5/14 21:29:25
+System.Exception: 127.0.0.1 62421 E:\projects\VS2015\FTPClient\FTPClient\bin\Debug\download\SeeYouAgain.ape 22209396
+2017/5/14 21:29:26
+System.Net.Sockets.SocketException: ÓÉÓÚÌ×½Ó×ÖÃ»ÓĞÁ¬½Ó²¢ÇÒ(µ±Ê¹ÓÃÒ»¸ö sendto µ÷ÓÃ·¢ËÍÊı¾İ±¨Ì×½Ó×ÖÊ±)Ã»ÓĞÌá¹©µØÖ·£¬·¢ËÍ»ò½ÓÊÕÊı¾İµÄÇëÇóÃ»ÓĞ±»½ÓÊÜ¡£
+   ÔÚ System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ÔÚ FTPDownload.Program.dataDisconnect()
+   ÔÚ FTPDownload.Program.Main(String[] args)

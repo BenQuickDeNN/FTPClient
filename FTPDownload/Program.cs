@@ -14,11 +14,12 @@ namespace FTPDownload
     {
         Socket dataSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
         Socket transferSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-        byte[] receiveByte = new byte[64 * 1024];
+        byte[] receiveByte = new byte[1024];
+        FileStream fs;
         /// <summary>
         /// 32MB的文件缓冲区
         /// </summary>
-        byte[] fileByte = new byte[32 * 1024 * 1024];
+        //byte[] fileByte = new byte[32 * 1024 * 1024];
         string FileName;
         /// <summary>
         /// 总文件大小，单位为字节
@@ -65,6 +66,7 @@ namespace FTPDownload
             IPEndPoint ipEndPoint = new IPEndPoint(ipAddress, port);
             FileName = Path.GetFullPath(fileName);
             FileSize = fileSize;
+            fs = new FileStream(FileName, FileMode.Create, FileAccess.Write);
             dataSocket.Connect(ipEndPoint);
             dataSocket.BeginReceive(receiveByte, 0, receiveByte.Length, 0, receiveCallBack, null);
         }
@@ -85,23 +87,16 @@ namespace FTPDownload
         {
             try
             {
+                
                 if (receiveCounter >= FileSize)
                 {
-                    if (!File.Exists(FileName))
-                    {
-                        FileStream fs = new FileStream(FileName, FileMode.Create, FileAccess.Write);
-                        fs.Write(fileByte, 0, FileSize);
-                        fs.Close();
-                    }
+                    fs.Write(receiveByte, 0, FileSize % receiveByte.Length);
+                    fs.Close();
                 }
                 else
                 {
-                    int oldCounter = receiveCounter;
+                    fs.Write(receiveByte, 0, receiveByte.Length);
                     receiveCounter += receiveByte.Length;
-                    for(int i = oldCounter;i < receiveCounter;i++)
-                    {
-                        fileByte[i] = receiveByte[i % receiveByte.Length];
-                    }
                     dataSocket.BeginReceive(receiveByte, 0, receiveByte.Length, 0, receiveCallBack, null);
                 }
             }

@@ -408,3 +408,10 @@ System.Net.Sockets.SocketException: ÓÉÓÚÌ×½Ó×ÖÃ»ÓĞÁ¬½Ó²¢ÇÒ(µ±Ê¹ÓÃÒ»¸ö sendto µ÷Ó
 System.Net.Sockets.SocketException: ÓÉÓÚÌ×½Ó×ÖÃ»ÓĞÁ¬½Ó²¢ÇÒ(µ±Ê¹ÓÃÒ»¸ö sendto µ÷ÓÃ·¢ËÍÊı¾İ±¨Ì×½Ó×ÖÊ±)Ã»ÓĞÌá¹©µØÖ·£¬·¢ËÍ»ò½ÓÊÕÊı¾İµÄÇëÇóÃ»ÓĞ±»½ÓÊÜ¡£
    ÔÚ System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
    ÔÚ FTPClient.FTPProtocol.SocketHelper.receiveCallBack(IAsyncResult iar) Î»ÖÃ E:\projects\VS2015\FTPClient\FTPClient\FTPProtocol\SocketHelper.cs:ĞĞºÅ 117
+2017/5/14 21:30:15
+System.IndexOutOfRangeException: Ë÷Òı³¬³öÁËÊı×é½çÏŞ¡£
+   ÔÚ FTPClient.FTPProtocol.SocketHelper.receiveCallBack(IAsyncResult iar) Î»ÖÃ E:\projects\VS2015\FTPClient\FTPClient\FTPProtocol\SocketHelper.cs:ĞĞºÅ 98
+2017/5/14 21:31:51
+System.Net.Sockets.SocketException: ÓÉÓÚÌ×½Ó×ÖÃ»ÓĞÁ¬½Ó²¢ÇÒ(µ±Ê¹ÓÃÒ»¸ö sendto µ÷ÓÃ·¢ËÍÊı¾İ±¨Ì×½Ó×ÖÊ±)Ã»ÓĞÌá¹©µØÖ·£¬·¢ËÍ»ò½ÓÊÕÊı¾İµÄÇëÇóÃ»ÓĞ±»½ÓÊÜ¡£
+   ÔÚ System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   ÔÚ FTPClient.FTPProtocol.SocketHelper.receiveCallBack(IAsyncResult iar) Î»ÖÃ E:\projects\VS2015\FTPClient\FTPClient\FTPProtocol\SocketHelper.cs:ĞĞºÅ 117

@@ -108,3 +108,17 @@ System.Net.Sockets.SocketException: ÓÉÓÚÌ×½Ó×ÖÃ»ÓĞÁ¬½Ó²¢ÇÒ(µ±Ê¹ÓÃÒ»¸ö sendto µ÷Ó
    ÔÚ System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
    ÔÚ FTPDataTransfer.Program.dataDisconnect()
    ÔÚ FTPDataTransfer.Program.Main(String[] args)
+2017/5/14 21:30:48
+System.Exception: 127.0.0.1 62757 E:\music\659243.mp3
+2017/5/14 21:30:48
+System.Net.Sockets.SocketException: ÓÉÓÚÌ×½Ó×ÖÃ»ÓĞÁ¬½Ó²¢ÇÒ(µ±Ê¹ÓÃÒ»¸ö sendto µ÷ÓÃ·¢ËÍÊı¾İ±¨Ì×½Ó×ÖÊ±)Ã»ÓĞÌá¹©µØÖ·£¬·¢ËÍ»ò½ÓÊÕÊı¾İµÄÇëÇóÃ»ÓĞ±»½ÓÊÜ¡£
+   ÔÚ System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ÔÚ FTPDataTransfer.Program.dataDisconnect()
+   ÔÚ FTPDataTransfer.Program.Main(String[] args)
+2017/5/14 21:31:35
+System.Exception: 127.0.0.1 63165 E:\music\231542.mp3
+2017/5/14 21:31:36
+System.Net.Sockets.SocketException: ÓÉÓÚÌ×½Ó×ÖÃ»ÓĞÁ¬½Ó²¢ÇÒ(µ±Ê¹ÓÃÒ»¸ö sendto µ÷ÓÃ·¢ËÍÊı¾İ±¨Ì×½Ó×ÖÊ±)Ã»ÓĞÌá¹©µØÖ·£¬·¢ËÍ»ò½ÓÊÕÊı¾İµÄÇëÇóÃ»ÓĞ±»½ÓÊÜ¡£
+   ÔÚ System.Net.Sockets.Socket.Disconnect(Boolean reuseSocket)
+   ÔÚ FTPDataTransfer.Program.dataDisconnect()
+   ÔÚ FTPDataTransfer.Program.Main(String[] args)

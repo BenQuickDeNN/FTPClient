@@ -2,3 +2,4 @@ E:\projects\VS2015\FTPClient\FTPDownload\bin\Debug\FTPDownload.exe
 E:\projects\VS2015\FTPClient\FTPDownload\bin\Debug\FTPDownload.pdb
 E:\projects\VS2015\FTPClient\FTPDownload\obj\Debug\FTPDownload.exe
 E:\projects\VS2015\FTPClient\FTPDownload\obj\Debug\FTPDownload.pdb
+E:\projects\VS2015\FTPClient\FTPDownload\obj\Debug\FTPDownload.csprojResolveAssemblyReference.cache
